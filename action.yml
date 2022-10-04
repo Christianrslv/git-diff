@@ -1,0 +1,13 @@
+name: 'Read yml file'
+description: 'Read yml file'
+inputs:
+  file:  # id of input
+    description: 'File name to read'
+    required: true
+    default: 'config.deploy.yml'
+outputs:
+  content: # id of output
+    description: 'Content'
+runs:
+  using: 'node16'
+  main: 'index.js'
