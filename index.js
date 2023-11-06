@@ -7,7 +7,7 @@ const fs = require('fs');
 const yml = require('js-yaml');
 
 try {
-  let file = getInput('config-file');
+  let file = getInput('file');
   if(file == '') file = 'config.deploy.yml';
   const fileContents = fs.readFileSync(file, 'utf8');
   const data = yml.load(fileContents);
